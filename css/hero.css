@@ -5,5 +5,9 @@
 }
 
 .hero-content {
-	height: 70vh;
+	height: 80vh;
+}
+
+.caret {
+	font-size: 100px;
 }

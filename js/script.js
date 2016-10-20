@@ -43,3 +43,18 @@ $('.hamburger').click( function(){
 		$('body').css("overflow", "hidden");
 	}
 });
+
+$('a').click(function(){
+	$('#nav').css("width", "0%");
+	$('body').css("overflow", "initial");
+})
+
+/*Scroll transition to anchor*/
+// $("a.toscroll").on('click',function(e) {
+//     var url = e.target.href;
+//     var hash = url.substring(url.indexOf("#")+1);
+//     $('html, body').animate({
+//         scrollTop: $('#'+hash).offset().top
+//     }, 500);
+//     return false;
+// });

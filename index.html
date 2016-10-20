@@ -17,6 +17,7 @@
     <link href="css/hamburger.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
     <link href="css/hero.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
@@ -24,7 +25,7 @@
     <!-- Testing CSS -->
     <link href="test.css" rel="stylesheet">
   </head>
-  
+
   <body>
 
   <header>
@@ -37,10 +38,10 @@
       </div>
       <div id="nav" class="overlay">
         <div class="overlay-content">
-          <a href="">Link 1</a>
-          <a href="">Link 2</a>
-          <a href="">Link 3</a>
-          <a href="">Link 5</a>
+          <a href="#flex-grid">Flex Grid</a>
+          <a href="#buttons">Buttons</a>
+          <a href="#modal-section">Modal</a>
+          <a href="#form">Form</a>
         </div>
       </div>
     </div>
@@ -52,12 +53,12 @@
       <div class="desktop-nav">
         <div class="flex">
           <div class="flex left">
-            <a href="">Link 1</a>
-            <a href="">Link 2</a>
+            <a href="#flex-grid" class="hvr-float-shadow">Flex Grid</a>
+            <a href="#buttons" class="hvr-float-shadow">Buttons</a>
           </div>
           <div class="flex right">
-            <a href="">Link 3</a>
-            <a href="">Link 4</a>
+            <a href="#modal-section" class="hvr-float-shadow">Modal</a>
+            <a href="#form" class="hvr-float-shadow">Form</a>
           </div>
         </div>
       </div>
@@ -68,12 +69,17 @@
           <h2>An Awesome CSS Flexbox Framework</h2>
         </div>
       </div>
+      <div class="flex bottom center">
+        <p class="caret hvr-icon-hang">ˇ
+        </p>
+      </div>
+      
     </div>  
   </header>
 
 
 <!-- Custom Tiles -->
-  <section>
+  <section id="flex-grid">
     <h1>Flex Grid</h1>
     <h3>Set Width Center</h3>
     <div class="flex center">
@@ -109,20 +115,20 @@
   </section>
 
 <!-- Buttons Start -->
-  <section>
+  <section id="buttons">
     <h1>Buttons</h1>
     <div class="flex center">
-      <button class="small center">Small</button>
-      <button class="center">Default</button>
-      <button class="large center">Large</button>
-      <button class="x-large center">X-Large</button>
-      <button class="full">Full-Width</button>
+      <button class="small center" style="margin: 10px auto;">Small</button>
+      <button class="center" style="margin: 10px auto;">Default</button>
+      <button class="large center" style="margin: 10px auto;">Large</button>
+      <button class="x-large center" style="margin: 10px auto;">X-Large</button>
+      <button class="full" style="margin: 10px auto;">Full-Width</button>
     </div>
   </section>
 <!-- Buttons End -->
 
 <!-- Modal Begin -->
-  <section>
+  <section id="modal-section">
     <h1>Modal</h1>
     <button onclick="openModal()">Open Modal</button>
     <div id="modal" class="modal flex center">
@@ -137,33 +143,38 @@
 <!-- Modal End --> 
 
 <!-- Form Start -->
-  <section>
+  <section id="form">
     <h1>Form</h1>
     <form action="#" method="POST">
       <div class="flex">
         <div class="flex-6 flex-mobile-12" style="padding: 10px;">
-          <label>Name</label>
           <input required type="name" name="name">
+          <label>Name <span>*</span></label>
         </div>
         <div class="flex-6 flex-mobile-12" style="padding: 10px;">
-          <label>Email</label>
+          
           <input required type="email" name="email">
+          <label>Email <span>*</span></label>
         </div>
         <div class="flex-6 flex-mobile-12" style="padding: 10px;">
-          <label>Telephone</label>
+          
           <input type="tel" name="telephone">
+          <label>Telephone</label>
         </div>
         <div class="flex-6 flex-mobile-12" style="padding: 10px;">
-          <label>Website</label>
+          
           <input type="url" name="website">
+          <label>Website</label>
         </div>
         <div class="flex-6 flex-mobile-12" style="padding: 10px;">
-          <label>Subject</label>
+          
           <input required type="text" name="subject">
+          <label>Subject <span>*</span></label>
         </div>
         <div class="flex-12" style="padding: 10px;">
-          <label>Message</label>
+          
           <textarea required type="text" name="message"></textarea>
+          <label>Message <span>*</span></label>
         </div>
         <button type="submit" value="Submit" class="center" style="margin: 25px auto;">Submit</button>
       </div>

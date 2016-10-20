@@ -1,4 +1,5 @@
 .hamburger {
+  background-color: #222;
   position: absolute;
   padding: 15px 15px;
   display: inline-block;
@@ -11,14 +12,13 @@
   font: inherit;
   color: inherit;
   text-transform: none;
-  background-color: transparent;
   border: 0;
   margin: 0;
-  overflow: visible; 
+  overflow: visible;
+  z-index: 12;
 }
 
 .hamburger-box {
-  z-index: 12;
   width: 40px;
   height: 24px;
   display: inline-block;
@@ -32,16 +32,16 @@
 }
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    width: 40px;
-    height: 4px;
-    background-color: #fff;
-    border-radius: 4px;
-    position: absolute;
-    transition-property: -webkit-transform;
-    transition-property: transform;
-    transition-property: transform, -webkit-transform;
-    transition-duration: 0.15s;
-    transition-timing-function: ease; 
+  width: 40px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease; 
 }
 
 .hamburger-inner::before, .hamburger-inner::after {

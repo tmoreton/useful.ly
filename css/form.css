@@ -15,7 +15,7 @@ input, select, textarea {
 }
 
 textarea {
-	height: 250px;
+	height: 200px;
 	resize: none;
 }
 
@@ -24,16 +24,39 @@ label {
     font-weight: 500;
 }
 
-input:focus, textarea:focus {
+label > span {
+	color: red;
+	font-size: 12px;
+}
+
+input:focus, 
+textarea:focus {
 	border-bottom: 2px solid #14B8B2;
 	box-shadow: none;
 }
 
-input:required:valid {
+input:focus + label, 
+textarea:focus + label {
+	color: #14B8B2;
+}
+
+input:required:valid, 
+textarea:required:valid {
 	border-bottom: 2px solid green;
 	box-shadow: none;
 }
 
-form.submitted input:required:invalid {
+input:required:valid + label, 
+textarea:required:valid + label {
+	color: green;
+}
+
+form.submitted input:required:invalid, 
+form.submitted textarea:required:invalid {
 	border-bottom: 2px solid red;
+}
+
+form.submitted input:required:invalid + label, 
+form.submitted textarea:required:invalid + label {
+	color: red;
 }
