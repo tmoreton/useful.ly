@@ -1,0 +1,161 @@
+h1 {
+	font-size: 4.624rem;
+	letter-spacing: -0.046rem;
+	line-height: 5rem;
+}
+h2 {
+	font-size: 3.247rem;
+	letter-spacing: -0.032rem;
+	line-height: 3.5rem;
+}
+h3 {
+	font-size: 2.566rem;
+	letter-spacing: -0.026rem;
+	line-height: 2.75rem;
+}
+h4 {
+	font-size: 2.027rem;
+	letter-spacing: -0.020rem;
+	line-height: 2.25rem;
+}
+h5, label {
+	font-size: 1.602rem;
+	letter-spacing: -0.01rem;
+	line-height: 1.75rem;
+}
+h6 {
+	font-size: 1.125rem;
+	letter-spacing: -0.011rem;
+	line-height: 1.5rem;
+}
+p,a {
+	font-size: 1rem;
+	letter-spacing: -0.01rem;
+	line-height: 1.5rem;
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1280px) {
+	h1 {
+		font-size: 4.11rem;
+		letter-spacing: -0.041rem;
+		line-height: 4.5rem;
+	}
+	h2 {
+		font-size:2.887rem;
+		letter-spacing: -0.029rem;
+		line-height: 3.25rem;
+	}
+	h3 {
+		font-size: 2.281rem;
+		letter-spacing: -0.023rem;
+		line-height: 2.5rem;
+	}
+	h4 {
+		font-size: 1.802rem;
+		letter-spacing: -0.018rem;
+		line-height: 2rem;
+	}
+	h5, label {
+		font-size: 1.424rem;
+		letter-spacing: -0.01rem;
+		line-height: 1.75rem;
+	}
+	h6 {
+		font-size: 1.125rem;
+		letter-spacing: -0.011rem;
+		line-height: 1.5rem;
+	}
+	p,a {
+		font-size: 1rem;
+		letter-spacing: -0.01rem;
+		line-height: 1.5rem;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width :840px) {
+	html, body {
+	    max-width: 100%;
+	    overflow-x: hidden;
+	}
+	h1 {
+		font-size: 3.247rem;
+		letter-spacing: -0.032rem;
+		line-height: 3.5rem;
+	} 
+	h2 {
+		font-size: 2.566rem;
+		letter-spacing: -0.026rem;
+		line-height: 2.75rem;
+	}
+	h3 {
+		font-size: 2.027rem;
+		letter-spacing: -0.020rem;
+		line-height: 2.25rem;
+	}
+	h4 {
+		font-size: 1.802rem;
+		letter-spacing: -0.018rem;
+		line-height: 2rem;
+	}
+	h5, label {
+		font-size: 1.424rem;
+		letter-spacing: -0.01rem;
+		line-height: 1.75rem;
+	}
+	h6 {
+		font-size: 1.125rem;
+		letter-spacing: -0.011rem;
+		line-height: 1.5rem;
+	}
+	p, a {
+		font-size: 1rem;
+		letter-spacing: -0.01rem;
+		line-height: 1.5rem;
+	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+	html, body {
+	    max-width: 100% !important;
+	    overflow-x: hidden !important;
+	}
+	h1 {
+		font-size: 2.566rem;
+		letter-spacing: -0.026rem;
+		line-height: 2.75rem;
+	}
+	h2 {
+		font-size: 2.027rem;
+		letter-spacing: -0.020rem;
+		line-height: 2.25rem;
+	}
+	h3 {
+		font-size: 1.802rem;
+		letter-spacing: -0.018rem;
+		line-height: 2rem;
+	}
+	h4 {
+		font-size: 1.602rem;
+		letter-spacing: -0.016rem;
+		line-height: 1.75rem;
+	}
+	h5, label {
+		font-size: 1.266rem;
+		letter-spacing: -0.01rem;
+		line-height: 1.5rem;
+	}
+	h6 {
+		font-size: 1.125rem;
+		letter-spacing: -0.011rem;
+		line-height: 1.5rem;
+	}
+	p, a {
+		font-size: 1rem;
+		letter-spacing: -0.01rem;
+		line-height: 1.5rem;
+	}
+}

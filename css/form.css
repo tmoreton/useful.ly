@@ -1,0 +1,54 @@
+form {
+	width: 100%;
+}
+
+input, select, textarea {
+	border: none;
+	border-bottom: 1px solid #dbdbdb;
+	padding: 10px;
+	width: 100%;
+	outline: none;
+	font-size: 16px;
+	font-weight: 100;
+	 padding-left: 0;
+}
+
+textarea {
+	height: 250px;
+	resize: none;
+}
+
+label {
+	padding-top: 15px;
+    font-weight: 500;
+}
+
+input:focus, textarea:focus {
+	border-bottom: 2px solid #14B8B2;
+	box-shadow: none;
+}
+
+input:required:valid {
+	border: 2px solid var(--green);
+	box-shadow: none;
+}
+
+form.submitted input:required:invalid {
+	border: 2px solid var(--error);
+}
+
+label > span {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+label > .required:after{
+	color: var(--green);
+	content: '(Required)';
+}
+
+label > .link:after{
+	color: var(--coral);
+	content: 'Link';
+	text-decoration: underline;
+}

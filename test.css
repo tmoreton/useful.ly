@@ -1,0 +1,41 @@
+/*Not needed for actual style guide*/
+h1 {
+	padding: 25px 0 10px 0;
+	font-weight: 400;
+}
+
+.logo {
+	color: #14B8B2;
+	font-weight: 100;
+	font-size: 52px;
+	border-bottom: 2px solid #14B8B2;
+}
+.tile {
+	min-height: 80px;
+	border-radius: 5px;
+	background-color: #14B8B2;
+	color: #fff;
+    text-align: center;
+    padding: 1.75em;
+	margin:0.5em;
+}
+
+.column-tile {
+	border-radius: 5px;
+	background-color: #222;
+	color: #fff;
+    text-align: center;
+    padding: 1.75em;
+	margin:0.5em;
+}
+
+ /*Small Devices, Tablets, Phones*/ 
+@media only screen and (max-width :768px) {
+	.column-tile {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width :480px) {
+
+}

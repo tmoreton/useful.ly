@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Limit to 960px no matter the screen size */
+body {
+    margin: 0 auto;
+    max-width: 960px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: #222;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	font-weight: 100;
+}
+
+/* Set Max Width to original file size */
+img {
+	max-width:100%; 
+	height:auto
+}
+
+.no-margin {
+	margin: 0;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+ /*Small Devices, Tablets, Phones*/ 
+@media only screen and (max-width :840px) {
+	body {
+		margin: 10px;
+	}
+}
+
+@media only screen and (max-width :480px) {
+
+}

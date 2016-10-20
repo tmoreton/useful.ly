@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>useful.ly</title>
+
+    <!-- Style Guide CSS -->
+    <link href="css/variables.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/buttons.css" rel="stylesheet">
+    <link href="css/flex.css" rel="stylesheet">
+    <link href="css/font-size.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/modal.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Testing CSS -->
+    <link href="test.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+<!-- Nav -->
+    <div class="flex">
+      <div class="flex left">
+        <a href="">
+          <p>Link 1</p>
+        </a>
+        <a href="">
+          <p>Link 1</p>
+        </a>
+      </div>
+      <div class="flex center">
+        <h1 class="logo">useful.ly</h1>
+      </div>
+      <div class="flex right">
+        <a href="">
+          <p>Link 1</p>
+        </a>
+        <a href="">
+          <p>Link 1</p>
+        </a>
+      </div>
+    </div>
+
+<!-- Custom Color Boxes -->
+    <h1>Flex Grid</h1>
+    <h3>Set Width Center</h3>
+    <div class="flex center">
+      <div class="tile">tile</div>
+      <div class="tile">tile</div>
+      <div class="tile">tile</div>
+      <div class="tile">tile</div>
+    </div>
+
+    <h3>Auto Width</h3>
+    <div class="flex">
+      <div class="flex tile center">.flex.center</div>
+      <div class="flex tile center">.flex.center</div>
+      <div class="flex tile center">.flex.center</div>
+      <div class="flex tile center">.flex.center</div>
+    </div>
+
+    <h3>12 Column Based Grid</h3>
+    <div class="flex">
+      <div class="flex-5 flex-tablet-12">
+        <div class="tile">.flex-5</div>
+      </div>
+      <div class="flex-2 flex-tablet-12">
+        <div class="tile">.flex-2</div>
+      </div>
+      <div class="flex-3 flex-tablet-12">
+        <div class="tile">.flex-3</div>
+      </div>
+      <div class="flex-2 flex-tablet-12">
+        <div class="tile">.flex-2</div>
+      </div>
+    </div>
+
+<!-- Buttons -->
+    <h1>Buttons</h1>
+    <div class="flex center">
+      <div class="flex-1 flex-mobile-12" style="margin: 5px 0;">
+        <button class="small">Small</button>
+      </div>
+      <div class="flex-2 flex-mobile-12" style="margin: 5px 0;">
+        <button>Default</button>
+      </div>
+      <div class="flex-2 flex-mobile-12" style="margin: 5px 0;">
+        <button class="large">Large</button>
+      </div>
+      <div class="flex-3 flex-mobile-12" style="margin: 5px 0;">
+        <button class="x-large">X-Large</button>
+      </div>
+      <button class="full">Full-Width</button>
+    </div>
+
+<!-- Form -->
+    <h1>Form</h1>
+    <form action="" method="POST">
+      <div class="flex">
+        <label>Name</label>
+        <input type="name" name="name">
+        <label>Email</label>
+        <input type="email" name="email">
+        <label>Subject</label>
+        <input type="text" name="subject">
+        <label>Telephone</label>
+        <input type="tel" name="telephone">
+        <label>Website</label>
+        <input type="url" name="website">
+        <label>Message</label>
+        <textarea type="text" name="message"></textarea>
+        <button type="submit" class="center">Submit</button>
+      </div>
+    </form>
+
+<!-- Modal Begin -->
+    <h1>Modal</h1>
+    <button onclick="openModal()">Open Modal</button>
+    <div id="modal" class="modal flex center">
+      <div class="modal-background" onclick="closeModal()"></div>
+      <div class="modal-content">
+        <p class="modal-close"  onclick="closeModal()">X</p>
+        <h2>Header</h2>
+        <p>Content</p>
+      </div>
+    </div>
+<!-- Modal End --> 
+
+    <!-- Useful.ly JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
