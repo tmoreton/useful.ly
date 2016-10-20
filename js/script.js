@@ -36,8 +36,10 @@ $('.hamburger').click( function(){
 	if ($(this).hasClass('is-active')){
 		$(this).removeClass('is-active');
 		$('#nav').css("width", "0%");
+		$('body').css("overflow", "initial");
 	} else {
 		$(this).addClass('is-active');
 		$('#nav').css("width", "100%");
+		$('body').css("overflow", "hidden");
 	}
 });

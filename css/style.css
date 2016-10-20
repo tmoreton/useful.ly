@@ -5,7 +5,6 @@
 /* Limit to 960px no matter the screen size */
 body {
     margin: 0 auto;
-    max-width: 960px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
     color: #222;
@@ -14,6 +13,11 @@ body {
 h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
 	font-weight: 100;
+}
+
+section {
+	max-width: 960px;
+	margin: auto;
 }
 
 /* Set Max Width to original file size */
@@ -32,9 +36,7 @@ img {
 
  /*Small Devices, Tablets, Phones*/ 
 @media only screen and (max-width :840px) {
-	body {
-		margin: 10px;
-	}
+
 }
 
 @media only screen and (max-width :480px) {

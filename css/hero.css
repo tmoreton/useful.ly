@@ -1,0 +1,9 @@
+.hero {
+	min-height: 100vh;
+	background-color: #14B8B2;
+	color: white;
+}
+
+.hero-content {
+	height: 70vh;
+}
