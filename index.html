@@ -8,13 +8,14 @@
     <title>useful.ly</title>
 
     <!-- Style Guide CSS -->
-    <link href="css/variables.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
     <link href="css/buttons.css" rel="stylesheet">
     <link href="css/flex.css" rel="stylesheet">
     <link href="css/font-size.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/modal.css" rel="stylesheet">
+    <link href="css/hamburger.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
@@ -25,30 +26,49 @@
   </head>
   <body>
 
-<!-- Nav -->
-    <div class="flex">
-      <div class="flex left">
-        <a href="">
-          <p>Link 1</p>
-        </a>
-        <a href="">
-          <p>Link 1</p>
-        </a>
+
+<!-- Mobile Nav Start -->
+    <div class="mobile-nav">
+      <div onclick="nav()" class="hamburger hamburger--squeeze">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
       </div>
-      <div class="flex center">
-        <h1 class="logo">useful.ly</h1>
+      <div class="flex">
+        <div class="flex center top">
+          <h1 class="logo top">useful.ly</h1>
+        </div>
       </div>
-      <div class="flex right">
-        <a href="">
-          <p>Link 1</p>
-        </a>
-        <a href="">
-          <p>Link 1</p>
-        </a>
+      <div id="nav" class="overlay">
+        <div class="overlay-content">
+          <a href="">Link 1</a>
+          <a href="">Link 1</a>
+          <a href="">Link 1</a>
+          <a href="">Link 1</a>
+        </div>
       </div>
     </div>
+<!-- Mobile Nav End -->
 
-<!-- Custom Color Boxes -->
+<!-- Desktop Nav Start -->
+    <div class="desktop-nav">
+      <div class="flex">
+        <div class="flex left">
+          <a href="">Link 1</a>
+          <a href="">Link 1</a>
+        </div>
+        <div class="flex center">
+          <h1 class="logo">useful.ly</h1>
+        </div>
+        <div class="flex right">
+          <a href="">Link 1</a>
+          <a href="">Link 1</a>
+        </div>
+      </div>
+    </div>
+<!-- Desktop Nav End -->
+
+<!-- Custom Tiles -->
     <h1>Flex Grid</h1>
     <h3>Set Width Center</h3>
     <div class="flex center">
@@ -82,7 +102,7 @@
       </div>
     </div>
 
-<!-- Buttons -->
+<!-- Buttons Start -->
     <h1>Buttons</h1>
     <div class="flex center">
       <div class="flex-1 flex-mobile-12" style="margin: 5px 0;">
@@ -99,8 +119,22 @@
       </div>
       <button class="full">Full-Width</button>
     </div>
+<!-- Buttons End -->
 
-<!-- Form -->
+<!-- Modal Begin -->
+    <h1>Modal</h1>
+    <button onclick="openModal()">Open Modal</button>
+    <div id="modal" class="modal flex center">
+      <div class="modal-background" onclick="closeModal()"></div>
+      <div class="modal-content">
+        <p class="modal-close"  onclick="closeModal()">x</p>
+        <h2>Header</h2>
+        <p>Content</p>
+      </div>
+    </div>
+<!-- Modal End --> 
+
+<!-- Form Start -->
     <h1>Form</h1>
     <form action="" method="POST">
       <div class="flex">
@@ -116,26 +150,13 @@
         <input type="url" name="website">
         <label>Message</label>
         <textarea type="text" name="message"></textarea>
-        <button type="submit" class="center">Submit</button>
+        <button type="submit" class="center" style="margin: 25px auto;">Submit</button>
       </div>
     </form>
-
-<!-- Modal Begin -->
-    <h1>Modal</h1>
-    <button onclick="openModal()">Open Modal</button>
-    <div id="modal" class="modal flex center">
-      <div class="modal-background" onclick="closeModal()"></div>
-      <div class="modal-content">
-        <p class="modal-close"  onclick="closeModal()">X</p>
-        <h2>Header</h2>
-        <p>Content</p>
-      </div>
-    </div>
-<!-- Modal End --> 
+<!-- Form End -->
 
     <!-- Useful.ly JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/select.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -11,6 +11,7 @@
 	-moz-transition: opacity 0.3s ease-in-out;
 	-ms-transition: opacity 0.3s ease-in-out;
 	-o-transition: opacity 0.3s ease-in-out;
+	transition: 0.5s;
 }
 
 .modal-background {
@@ -39,6 +40,7 @@
   float: right;
   cursor: default;
   font-weight: bold;
+  height: 100%;
 }
 
 .modal-close:hover {
