@@ -10,6 +10,11 @@ body {
     color: #222;
 }
 
+footer {
+    padding: 25px;
+    border-top: 1px solid #dbdbdb;
+}
+
 h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
 	font-weight: 100;
@@ -18,6 +23,7 @@ h1, h2, h3, h4, h5, h6, p {
 section {
 	max-width: 960px;
 	margin: auto;
+	padding: 25px;
 }
 
 /* Set Max Width to original file size */

@@ -23,11 +23,11 @@
 
     <!-- Testing CSS -->
     <link href="test.css" rel="stylesheet">
-
   </head>
+  
   <body>
 
-
+  <header>
 <!-- Mobile Nav Start -->
     <div class="mobile-nav">
       <div onclick="nav()" class="hamburger hamburger--squeeze">
@@ -47,31 +47,30 @@
 <!-- Mobile Nav End -->
 
 
-
-
-  <div class="hero">
-<!-- Desktop Nav Start -->
-    <div class="desktop-nav">
-      <div class="flex">
-        <div class="flex left">
-          <a href="">Link 1</a>
-          <a href="">Link 2</a>
-        </div>
-        <div class="flex right">
-          <a href="">Link 3</a>
-          <a href="">Link 4</a>
+    <div class="hero">
+  <!-- Desktop Nav Start -->
+      <div class="desktop-nav">
+        <div class="flex">
+          <div class="flex left">
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+          </div>
+          <div class="flex right">
+            <a href="">Link 3</a>
+            <a href="">Link 4</a>
+          </div>
         </div>
       </div>
-    </div>
-<!-- Desktop Nav End -->
-    <div class="flex hero-content center">
-      <div>
-        <h1 class="logo">useful.ly</h1>
-        <h2>An Awesome CSS Flexbox Framework</h2>
+  <!-- Desktop Nav End -->
+      <div class="flex hero-content center">
+        <div>
+          <h1 class="logo">useful.ly</h1>
+          <h2>An Awesome CSS Flexbox Framework</h2>
+        </div>
       </div>
+    </div>  
+  </header>
 
-    </div>
-  </div>
 
 <!-- Custom Tiles -->
   <section>
@@ -113,18 +112,10 @@
   <section>
     <h1>Buttons</h1>
     <div class="flex center">
-      <div class="flex-1 flex-mobile-12">
-        <button class="small">Small</button>
-      </div>
-      <div class="flex-2 flex-mobile-12">
-        <button>Default</button>
-      </div>
-      <div class="flex-2 flex-mobile-12">
-        <button class="large">Large</button>
-      </div>
-      <div class="flex-3 flex-mobile-12">
-        <button class="x-large">X-Large</button>
-      </div>
+      <button class="small center">Small</button>
+      <button class="center">Default</button>
+      <button class="large center">Large</button>
+      <button class="x-large center">X-Large</button>
       <button class="full">Full-Width</button>
     </div>
   </section>
@@ -138,7 +129,7 @@
       <div class="modal-background" onclick="closeModal()"></div>
       <div class="modal-content">
         <p class="modal-close"  onclick="closeModal()">x</p>
-        <h2>Header</h2>
+        <h1>Header</h1>
         <p>Content</p>
       </div>
     </div>
@@ -148,25 +139,45 @@
 <!-- Form Start -->
   <section>
     <h1>Form</h1>
-    <form action="" method="POST">
+    <form action="#" method="POST">
       <div class="flex">
-        <label>Name</label>
-        <input type="name" name="name">
-        <label>Email</label>
-        <input type="email" name="email">
-        <label>Subject</label>
-        <input type="text" name="subject">
-        <label>Telephone</label>
-        <input type="tel" name="telephone">
-        <label>Website</label>
-        <input type="url" name="website">
-        <label>Message</label>
-        <textarea type="text" name="message"></textarea>
-        <button type="submit" class="center" style="margin: 25px auto;">Submit</button>
+        <div class="flex-6 flex-mobile-12" style="padding: 10px;">
+          <label>Name</label>
+          <input required type="name" name="name">
+        </div>
+        <div class="flex-6 flex-mobile-12" style="padding: 10px;">
+          <label>Email</label>
+          <input required type="email" name="email">
+        </div>
+        <div class="flex-6 flex-mobile-12" style="padding: 10px;">
+          <label>Telephone</label>
+          <input type="tel" name="telephone">
+        </div>
+        <div class="flex-6 flex-mobile-12" style="padding: 10px;">
+          <label>Website</label>
+          <input type="url" name="website">
+        </div>
+        <div class="flex-6 flex-mobile-12" style="padding: 10px;">
+          <label>Subject</label>
+          <input required type="text" name="subject">
+        </div>
+        <div class="flex-12" style="padding: 10px;">
+          <label>Message</label>
+          <textarea required type="text" name="message"></textarea>
+        </div>
+        <button type="submit" value="Submit" class="center" style="margin: 25px auto;">Submit</button>
       </div>
     </form>
   </section>
 <!-- Form End -->
+
+  <footer>
+    <div class="flex">
+      <div class="center">
+        <p>© 2016 Powered by useful.ly</p>
+      </div>
+    </div>
+  </footer>
 
     <!-- Useful.ly JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

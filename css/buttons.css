@@ -12,26 +12,26 @@ button {
 
 button:hover {
 	border: 1px solid #14B8B2;
-	transition: 0.5s;
+	transition: 0.1s;
 }
 
 button:active {
 	color: #fff;
 	background-color: #14B8B2;
     box-shadow: inset 1px 1px 5px #888888;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
 a {
     color: #fff;
     text-decoration: none;
     font-size: 24px;
-    padding: 25px;
+    padding: 20px;
 }
 
 a:hover {
-	color: #14B8B2;
-	transition: 0.5s;
+	color: #222;
+	transition: 0.3s;
 }
 
 button.small {
