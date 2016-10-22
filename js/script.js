@@ -58,3 +58,28 @@ $('a').click(function(){
 //     }, 500);
 //     return false;
 // });
+
+var URL = 'https://ae2o09afuh.execute-api.us-east-1.amazonaws.com/prod'
+ 
+$('.contact-button').click(function () {
+ 
+  var data = {
+    name: "tim Moreton",
+    email: "tmoreton89@gmail.com",
+    description: "this is a test"
+  }
+ console.log("its working")
+  $.ajax({
+    type: 'POST',
+    url: URL,
+    dataType: 'json',
+    contentType: 'application/json',
+    data: JSON.stringify(data),
+    success: function () {
+      // clear form and show a success message
+    },
+    error: function () {
+      // show an error message
+    }
+  })
+})

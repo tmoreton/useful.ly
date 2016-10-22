@@ -1,3 +1,12 @@
+html {
+  font-size: 100%; /* Sets up the Base 10 stuff */
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
 h1 {
 	font-size: 4.624rem;
 	letter-spacing: -0.046rem;
