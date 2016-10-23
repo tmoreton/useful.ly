@@ -59,14 +59,14 @@ $('a').click(function(){
 //     return false;
 // });
 
-var URL = 'https://ae2o09afuh.execute-api.us-east-1.amazonaws.com/prod'
+var URL = 'https://ycwfh8vkck.execute-api.us-east-1.amazonaws.com/prod/test'
  
 $('.contact-button').click(function () {
  
   var data = {
-    name: "tim Moreton",
-    email: "tmoreton89@gmail.com",
-    description: "this is a test"
+    "name": "tim Moreton",
+    "email": "tmoreton89@gmail.com",
+    "description": "this is a test"
   }
  console.log("its working")
   $.ajax({
@@ -74,11 +74,13 @@ $('.contact-button').click(function () {
     url: URL,
     dataType: 'json',
     contentType: 'application/json',
-    data: JSON.stringify(data),
-    success: function () {
+    data: data,
+    success: function (data) {
       // clear form and show a success message
+      console.log("Success" + data)
     },
-    error: function () {
+    error: function (data) {
+    	console.log("Error" + JSON.stringify(data))
       // show an error message
     }
   })
