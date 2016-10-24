@@ -2,6 +2,10 @@
   display: none;
 }
 
+.nav-item {
+  padding: 25px;
+}
+
 /* The Overlay (background) */
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */    
