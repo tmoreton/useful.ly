@@ -31,10 +31,12 @@
   margin-top: -2px; 
 }
 
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+.hamburger-inner, 
+.hamburger-inner::before, 
+.hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 4px;
   position: absolute;
   transition-property: -webkit-transform;
@@ -44,7 +46,8 @@
   transition-timing-function: ease; 
 }
 
-.hamburger-inner::before, .hamburger-inner::after {
+.hamburger-inner::before, 
+.hamburger-inner::after {
   content: "";
   display: block; 
 }

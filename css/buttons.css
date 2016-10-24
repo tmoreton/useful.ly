@@ -1,47 +1,47 @@
 button {
 	border: none;
-	background-color: #fff;
+	background-color: var(--white);
 	outline: none;
-    font-size: 20.25px;
-    padding: 8px 30px;
-    border-radius: 3px;
-    border: 1px solid #dbdbdb;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
+  font-size: 20.25px;
+  padding: 8px 30px;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
 }
 
 button:hover {
-	border: 1px solid #14B8B2;
+	border: 1px solid var(--main);
 	transition: 0.1s;
 }
 
 button:active {
 	color: #fff;
-	background-color: #14B8B2;
-    box-shadow: inset 1px 1px 5px #888888;
-    transition: 0.1s;
+	background-color: var(--main);
+  box-shadow: inset 1px 1px 5px var(--black);
+  transition: 0.1s;
 }
 
 a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 24px;
-    padding: 20px;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 24px;
+  padding: 20px;
 }
 
 a:hover {
-	color: #222;
+	color: var(--black);
 	transition: 0.3s;
 }
 
 button.small {
-    font-size: 16px;
-    padding: 8px 24px;
+  font-size: 16px;
+  padding: 8px 24px;
 }
 
 button.large {
-    font-size: 25.63px;
-    padding: 8px 42px;
+  font-size: 25.63px;
+  padding: 8px 42px;
 }
 
 button.x-large {
@@ -54,7 +54,7 @@ button.full {
 }
 
  /*Small Devices, Tablets, Phones*/ 
-@media only screen and (max-width :840px) {
+@media only screen and (max-width :768px) {
 	button {
 		width: 100%;
 	}
@@ -65,38 +65,3 @@ button.full {
 		width: 100%;
 	}
 }
-
-/* Rectangle Out */
-/*.hvr-rectangle-out {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-.hvr-rectangle-out:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #14B8B2;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.05s;
-  transition-duration: 0.05s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-rectangle-out:active {
-  color: white;
-}
-.hvr-rectangle-out:active:before {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}*/

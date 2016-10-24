@@ -4,17 +4,16 @@
 
 /* The Overlay (background) */
 .overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
-    height: 100%;
-    width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 11; /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: rgb(255,255,255); /* Black fallback color */
-    background: rgba(255,255,255,0.95);
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 11; /* Sit on top */
+  left: 0;
+  top: 0;
+  background: var(--whiteBackground);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
 /* Position the content inside the overlay */
@@ -30,15 +29,15 @@
 .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
-    color: #818181;
+    font-size: 24px;
+    color: var(--black);
     display: block; /* Display block instead of inline */
     transition: 0.2s; /* Transition effects on hover (color) */
 }
 
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
-    color: #14B8B2;
+    color: var(--main);
 }
 
  /*Small Devices, Tablets, Phones*/ 

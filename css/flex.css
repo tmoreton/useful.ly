@@ -158,7 +158,7 @@
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width :840px) {
+@media only screen and (max-width :768px) {
   .flex-tablet-12 {
     -webkit-flex-basis: 100%;
     flex-basis: 100%;

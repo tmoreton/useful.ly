@@ -1,0 +1,10 @@
+:root {
+  --main: #14B8B2;
+  --border: #dbdbdb;
+  --white: #ffffff;
+  --black: #222222;
+  --red: #ff2400;
+  --green: #008E00;
+  --whiteBackground: rgba(255,255,255,0.95);
+  --blackBackground: rgba(0,0,0,0.75);
+}

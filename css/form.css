@@ -4,7 +4,7 @@ form {
 
 input, select, textarea {
 	border: none;
-	border-bottom: 1px solid #dbdbdb;
+	border-bottom: 1px solid var(--border);
 	padding: 10px;
 	width: 100%;
 	outline: none;
@@ -21,7 +21,7 @@ textarea {
 
 label {
 	padding-top: 15px;
-    font-weight: 500;
+  font-weight: 500;
 }
 
 label > span {
@@ -31,32 +31,32 @@ label > span {
 
 input:focus, 
 textarea:focus {
-	border-bottom: 2px solid #14B8B2;
+	border-bottom: 2px solid var(--main);
 	box-shadow: none;
 }
 
 input:focus + label, 
 textarea:focus + label {
-	color: #14B8B2;
+	color: var(--main);
 }
 
 input:required:valid, 
 textarea:required:valid {
-	border-bottom: 2px solid green;
+	border-bottom: 2px solid var(--green);
 	box-shadow: none;
 }
 
 input:required:valid + label, 
 textarea:required:valid + label {
-	color: green;
+	color: var(--green);
 }
 
 form.submitted input:required:invalid, 
 form.submitted textarea:required:invalid {
-	border-bottom: 2px solid red;
+	border-bottom: 2px solid var(--red);
 }
 
 form.submitted input:required:invalid + label, 
 form.submitted textarea:required:invalid + label {
-	color: red;
+	color: var(--red);
 }

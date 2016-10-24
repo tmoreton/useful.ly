@@ -4,15 +4,15 @@
 
 /* Limit to 960px no matter the screen size */
 body {
-    margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
-    color: #222;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  color: var(--black);
 }
 
 footer {
-    padding: 25px;
-    border-top: 1px solid #dbdbdb;
+  padding: 25px;
+  border-top: 1px solid var(--border);
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -32,16 +32,8 @@ img {
 	height:auto
 }
 
-.no-margin {
-	margin: 0;
-}
-
-.no-padding {
-	padding: 0;
-}
-
  /*Small Devices, Tablets, Phones*/ 
-@media only screen and (max-width :840px) {
+@media only screen and (max-width :768px) {
 
 }
 

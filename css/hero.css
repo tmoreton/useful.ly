@@ -1,6 +1,6 @@
 .hero {
 	min-height: 100vh;
-	background-color: #14B8B2;
+	background-color: var(--main);
 	color: white;
 }
 
