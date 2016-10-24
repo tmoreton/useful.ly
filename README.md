@@ -17,6 +17,7 @@ Include this line in your index.html
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,58 +25,140 @@ Include this line in your index.html
     <title></title>
 
     <!-- Style Guide CSS -->
-		<link rel="stylesheet" type="text/css" href="https://s3.amazonaws.com/useful.ly/flex.css">
+    <link rel="stylesheet" type="text/css" href="https://s3.amazonaws.com/useful.ly/flex.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
   </head>
 
   <body>
 
-  	<header></header>
-  	<section></section>
-	  <footer></footer>
+		<header></header>
+
+		<section></section>
+
+		<footer></footer>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
   </body>
 </html>
 ```
 
 ### Flex Class Structure
 
+#### Flex Set Width Center
 ```sh
-Content Here
+  <div class="flex center">
+    <div></div>
+    <div></div>
+  </div>
 ```
 
-### Navigation
-
+#### Flex Auto Width
 ```sh
-Content Here
+  <div class="flex">
+    <div class="flex center"></div>
+    <div class="flex center"></div>
+  </div>
+```
+
+#### Classic 12 Column Based Flexbox Grid
+```sh
+  <div class="flex">
+    <div class="flex-6 flex-tablet-12">
+      <div></div>
+    </div>
+    <div class="flex-6 flex-tablet-12">
+      <div></div>
+    </div>
+  </div>
 ```
 
 ### Hero
 
 ```sh
-Content Here
+  <div class="hero">
+    <div class="flex hero-content center">
+      <div></div>
+    </div>
+  </div>  
 ```
 
 ### Buttons
 
 ```sh
-Content Here
+  <button class="small center"></button>
+  <button class="center"></button>
+  <button class="large center"></button>
+  <button class="x-large center"></button>
+  <button class="full"></button>
 ```
 
-### Modal
+### Modal HTML
 
 ```sh
-Content Here
+  <button onclick="openModal()">Open Modal</button>
+
+  <div id="modal" class="modal flex center">
+    <div class="modal-background" onclick="closeModal()"></div>
+    <div class="modal-content">
+      <p class="modal-close"  onclick="closeModal()">x</p>
+      <h1>Header</h1>
+      <p>Content</p>
+    </div>
+  </div>
+```
+
+### Modal JS
+
+```sh
+	function openModal(){
+		var modal = document.getElementById("modal");
+		modal.style.visibility = "visible"
+		modal.style.opacity = 1
+		document.body.style.overflow = "hidden";
+	}
+
+	function closeModal(){
+		var modal = document.getElementById("modal");
+		modal.style.visibility = "hidden"
+		modal.style.opacity = 0
+		document.body.removeAttribute("style");
+	}
 ```
 
 ### Form
 
 ```sh
-Content Here
+  <form action="#" method="POST">
+    <div class="flex">
+      <div class="flex-6 flex-mobile-12">
+        <input required type="name" name="name">
+        <label>Name <span>*</span></label>
+      </div>
+      <div class="flex-6 flex-mobile-12">
+        <input required type="email" name="email">
+        <label>Email <span>*</span></label>
+      </div>
+      <div class="flex-12">
+        <textarea required type="text" name="message"></textarea>
+        <label>Message <span>*</span></label>
+      </div>
+      <button type="submit" value="Submit" class="center">Submit</button>
+    </div>
+  </form>
+```
+
+### Form JS
+
+```sh
+// This validates form fields
+$('button[type="submit"]').click( function(){
+    $('form').addClass('submitted');
+});
 ```
 
 ### CDN
