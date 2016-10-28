@@ -20,19 +20,30 @@ $('button[type="submit"]').click( function(){
 });
 
 // Showing and Hiding mobile nav Overlay
-$('.hamburger').click( function(){
-	if ($(this).hasClass('is-active')){
-		$(this).removeClass('is-active');
-		$('#nav').css("width", "0%");
+$('#open-close-nav').click( function(){
+	if ($("#open-close-nav").hasClass('is-active')){
+		$("#open-close-nav").removeClass('is-active');
 		$('body').css("overflow", "initial");
+		$(".menu").removeClass("open");
 	} else {
-		$(this).addClass('is-active');
-		$('#nav').css("width", "100%");
+		$("#open-close-nav").addClass('is-active');
 		$('body').css("overflow", "hidden");
+		$(".menu").addClass("open");
 	}
 });
 
+//Close nav when link is clicked
 $('a').click(function(){
-	$('#nav').css("width", "0%");
+	$("#open-close-nav").removeClass('is-active');
+	$(".menu").removeClass("open");
 	$('body').css("overflow", "initial");
+})
+
+// Nav Dropwdowns
+$(".nav-item").click(function(){
+	if ($(this).hasClass("open")){
+		$(this).removeClass("open");
+	} else {
+		$(this).addClass("open");
+	}
 })

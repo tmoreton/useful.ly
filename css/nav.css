@@ -1,59 +1,114 @@
-.mobile-nav {
+header {
+  padding: 13px 0;
+}
+
+.logo {
+  padding-top: 8px;
+}
+.nav {
+  max-width: 960px; 
+  margin: auto;
+}
+
+.menu.open {
+  height: 100%;
+}
+
+.dropdown {
   display: none;
+  position: absolute;
+  background-color: var(--white);
+  margin-top: 20px;
+  margin-left: -20px;
+  border-top: none;
+  min-width: 150px;
+}
+
+.nav-item:hover > .dropdown {
+  display: block;
 }
 
 .nav-item {
-  padding: 25px;
+  padding: 20px 0;
 }
 
-/* The Overlay (background) */
-.overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */    
-  height: 100%;
-  width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 11; /* Sit on top */
-  left: 0;
-  top: 0;
-  background: var(--whiteBackground);
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+.main {
+  cursor: default;
 }
 
-/* Position the content inside the overlay */
-.overlay-content {
-    position: relative;
-    top: 25%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+.sub {
+  padding: 5px 20px;
 }
 
-/* The navigation links inside the overlay */
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 24px;
+.main:hover, .sub:hover {
+  color: var(--main);
+}
+
+.beta {
+    display: inline-flex;
+    font-size: 16px;
     color: var(--black);
-    display: block; /* Display block instead of inline */
-    transition: 0.2s; /* Transition effects on hover (color) */
+    font-weight: bold;
 }
 
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-    color: var(--main);
-}
-
- /*Small Devices, Tablets, Phones*/ 
 @media only screen and (max-width :768px) {
-  .mobile-nav {
-    display: block;
-  }
-  .desktop-nav {
-    display: none;
-  }
+
 }
 
 @media only screen and (max-width :480px) {
+  .menu {
+    display: block;
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 59px;
+    left: 0;
+    background-color: var(--white);
+    transition: 0.5s;
+    overflow: scroll;
+  }
 
+  .main, .sub {
+    border-bottom: 1px solid var(--main);
+    padding: 20px;
+  }
+
+  .nav-item {
+    padding: 0;
+  }
+
+  .nav-item:hover .dropdown {
+    display: none;
+  }
+
+  .nav-item > .main:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    float: right;
+    font-size: 18px;
+  }
+
+  .nav-item.open > .main {
+    color: var(--main);
+  }
+
+  .nav-item.open > .main:after {
+    transform: rotate(180deg);
+  }
+
+  .nav-item ~ .dropdown {
+    display: none;
+  }
+
+  .nav-item.open > .dropdown {
+    display: block;
+  }
+
+  .dropdown {
+    display: none;
+    position: initial;
+    border: none;
+    margin: 0;
+  }
 }

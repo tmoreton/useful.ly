@@ -16,7 +16,6 @@
     <link href="css/modal.css" rel="stylesheet">
     <link href="css/hamburger.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
-    <link href="css/hero.css" rel="stylesheet">
     <link href="css/variables.css" rel="stylesheet">
 
     <!-- Google Fonts -->
@@ -29,60 +28,65 @@
 
   <body>
 
+<!-- Begin Nav -->
   <header>
-<!-- Mobile Nav Start -->
-    <div class="mobile-nav">
-      <div onclick="nav()" class="hamburger hamburger--squeeze">
-        <div class="hamburger-box">
-          <div class="hamburger-inner"></div>
+    <div class="flex flex-6 nav center left">
+      <div class="hidden-desktop center">
+        <div id="open-close-nav" class="hamburger hamburger--squeeze">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
         </div>
       </div>
-      <div id="nav" class="overlay">
-        <div class="overlay-content">
-          <a class="nav-item" href="#flex-grid">Flex Grid</a>
-          <a class="nav-item" href="#buttons">Buttons</a>
-          <a class="nav-item" href="#modal-section">Modal</a>
-          <a class="nav-item" href="#form">Form</a>
+
+      <div class="flex flex-12 center">
+        <div class="center flex-3 flex-mobile-6">
+          <a href="/">
+            <span class="beta"><img class="flex center" src="logo.jpg">beta</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="menu flex center left">
+        <div class="nav-item">
+          <p class="main">Dropdown</p>
+          <div class="dropdown">
+            <a href="#" class="sub">Test 1</a>
+            <a href="#" class="sub">Test 2</a>
+            <a href="#" class="sub">Test 3</a>
+          </div>
+        </div>
+
+        <a href="#flex-grid" class="main">Flex Grid</a>
+        <a href="#buttons" class="main">Buttons</a>
+        <a href="#modal-section" class="main">Modal</a>
+        <a href="#form" class="main">Form</a>
+      </div>
+    </div> 
+  </header>
+<!-- End Nav -->
+
+<!-- Begin Hero Section -->
+  <div class="hero">
+    <div class="flex hero-content center">
+      <div>
+        <h1 class="logo">useful.ly<span class="beta">beta</span></h1>
+        <h2>An Awesome CSS Flexbox Framework</h2>
+        <div style="padding-top: 25px;" class="flex">
+          <a href="https://s3.amazonaws.com/useful.ly/useful.ly.min.css" target="_blank">
+            <button>Download <i class="fa fa-download" aria-hidden="true"></i></button>
+          </a>
+          <a href="https://github.com/tmoreton/useful.ly" target="_blank">
+            <button>GitHub <i class="fa fa-github" aria-hidden="true"></i></button>
+          </a>
         </div>
       </div>
     </div>
-<!-- Mobile Nav End -->
-
-
-    <div class="hero">
-  <!-- Desktop Nav Start -->
-      <div class="desktop-nav">
-        <div class="flex">
-          <div class="flex left">
-            <a class="nav-item" href="#flex-grid">Flex Grid</a>
-            <a class="nav-item" href="#buttons">Buttons</a>
-          </div>
-          <div class="flex right">
-            <a class="nav-item" href="#modal-section">Modal</a>
-            <a class="nav-item" href="#form">Form</a>
-          </div>
-        </div>
-      </div>
-  <!-- Desktop Nav End -->
-      <div class="flex hero-content center">
-        <div>
-          <h1 class="logo">useful.ly</h1>
-          <h2>An Awesome CSS Flexbox Framework</h2>
-          <div style="padding-top: 25px;">
-            <a href="https://s3.amazonaws.com/useful.ly/useful.ly.min.css" target="_blank">
-              <button>Download <i class="fa fa-download" aria-hidden="true"></i></button>
-            </a>
-            <a href="https://github.com/tmoreton/useful.ly" target="_blank">
-              <button>Github <i class="fa fa-github" aria-hidden="true"></i></button>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="flex bottom center">
-        <p class="caret">ˇ</p>
-      </div>
-    </div>  
-  </header>
+    <div class="flex bottom center">
+      <p class="caret">ˇ</p>
+    </div>
+  </div>  
+<!-- End Hero Section -->
 
 
 <!-- Custom Tiles -->

@@ -21,6 +21,7 @@
 	right: 0;
 	top: 0;
 	background: var(--blackBackground);
+	z-index: -1
 }
 
 .modal-content {

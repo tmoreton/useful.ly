@@ -32,6 +32,19 @@ img {
 	height:auto
 }
 
+.hero {
+	background-color: var(--main);
+	color: white;
+}
+
+.hero-content {
+	height: 75vh;
+}
+
+.caret {
+	font-size: 100px;
+}
+
  /*Small Devices, Tablets, Phones*/ 
 @media only screen and (max-width :768px) {
 

@@ -23,13 +23,12 @@ button:active {
 }
 
 a {
-  color: var(--white);
+  display: block;
   text-decoration: none;
-  font-size: 24px;
 }
 
 a:hover {
-	color: var(--black);
+	color: var(--main);
 	transition: 0.3s;
 }
 
