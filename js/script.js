@@ -14,11 +14,6 @@ function closeModal(){
 	document.body.removeAttribute("style");
 }
 
-// This validates form fields
-$('button[type="submit"]').click( function(){
-    $('form').addClass('submitted');
-});
-
 // Showing and Hiding mobile nav Overlay
 $('#open-close-nav').click( function(){
 	if ($("#open-close-nav").hasClass('is-active')){

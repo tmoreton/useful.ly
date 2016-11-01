@@ -14,8 +14,8 @@ h1 {
 	border-radius: 5px;
 	background-color: var(--main);
 	color: var(--white);
-    text-align: center;
-    padding: 1.75em;
+	text-align: center;
+	padding: 1.75em;
 	margin:0.5em;
 }
 
@@ -23,8 +23,8 @@ h1 {
 	border-radius: 5px;
 	background-color: var(--black);
 	color: var(--white);
-    text-align: center;
-    padding: 1.75em;
+	text-align: center;
+	padding: 1.75em;
 	margin:0.5em;
 }
 

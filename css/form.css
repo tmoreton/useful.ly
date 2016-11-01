@@ -42,13 +42,13 @@ textarea:focus + label {
 
 input:required:valid, 
 textarea:required:valid {
-	border-bottom: 2px solid var(--green);
+	border-bottom: 2px solid var(--main);
 	box-shadow: none;
 }
 
 input:required:valid + label, 
 textarea:required:valid + label {
-	color: var(--green);
+	color: var(--main);
 }
 
 form.submitted input:required:invalid, 
@@ -59,4 +59,8 @@ form.submitted textarea:required:invalid {
 form.submitted input:required:invalid + label, 
 form.submitted textarea:required:invalid + label {
 	color: var(--red);
+}
+
+.form-submit {
+	margin: 25px auto;
 }

@@ -106,6 +106,7 @@
   -ms-flex-pack: flex-start; 
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
+  margin-left: 0;
 }
 
 .center {
@@ -129,6 +130,7 @@
   -ms-flex-pack: flex-end; 
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
+  margin-right: 0;
 }
 
 .top {

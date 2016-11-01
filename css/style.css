@@ -10,6 +10,9 @@ body {
   color: var(--black);
 }
 
+header {
+	 padding: 10px;
+}
 footer {
   padding: 25px;
   border-top: 1px solid var(--border);
@@ -38,7 +41,7 @@ img {
 }
 
 .hero-content {
-	height: 75vh;
+	height: 80vh;
 }
 
 .caret {

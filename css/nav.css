@@ -1,13 +1,7 @@
-header {
-  padding: 13px 0;
-}
-
-.logo {
-  padding-top: 8px;
-}
 .nav {
   max-width: 960px; 
   margin: auto;
+  height: 59px;
 }
 
 .menu.open {
@@ -18,9 +12,8 @@ header {
   display: none;
   position: absolute;
   background-color: var(--white);
-  margin-top: 20px;
-  margin-left: -20px;
-  border-top: none;
+  margin-top: 15px;
+  margin-left: -15px;
   min-width: 150px;
 }
 
@@ -29,7 +22,7 @@ header {
 }
 
 .nav-item {
-  padding: 20px 0;
+  padding: 18px 0;
 }
 
 .main {
@@ -45,10 +38,10 @@ header {
 }
 
 .beta {
-    display: inline-flex;
-    font-size: 16px;
-    color: var(--black);
-    font-weight: bold;
+  display: inline-flex;
+  font-size: 16px;
+  color: var(--black);
+  font-weight: bold;
 }
 
 @media only screen and (max-width :768px) {

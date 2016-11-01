@@ -25,6 +25,7 @@ button:active {
 a {
   display: block;
   text-decoration: none;
+  color: var(--black);
 }
 
 a:hover {
