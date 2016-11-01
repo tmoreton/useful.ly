@@ -10,9 +10,6 @@ body {
   color: var(--black);
 }
 
-header {
-	 padding: 10px;
-}
 footer {
   padding: 25px;
   border-top: 1px solid var(--border);
