@@ -22,6 +22,10 @@ $("#contact-form").submit(function(e) {
       $(".form-submit").text("Success!");
       $(".form-submit").css("background-color", "#14B8B2");
       $(".form-submit").css("color", "#fff");
+      $("input[name='name']").val("");
+      $("input[name='email']").val("");
+      $("textarea[name='message']").val("");
+      $('form').removeClass('submitted');
     },
     error: function (data) {
       console.log("Error" + data)

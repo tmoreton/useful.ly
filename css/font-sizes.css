@@ -27,7 +27,7 @@ h4 {
 	letter-spacing: -0.020rem;
 	line-height: 2.25rem;
 }
-h5, label {
+h5 {
 	font-size: 1.602rem;
 	letter-spacing: -0.01rem;
 	line-height: 1.75rem;
@@ -37,7 +37,7 @@ h6 {
 	letter-spacing: -0.011rem;
 	line-height: 1.5rem;
 }
-p,a {
+p,a,label{
 	font-size: 1rem;
 	letter-spacing: -0.01rem;
 	line-height: 1.5rem;
