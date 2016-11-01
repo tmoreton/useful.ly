@@ -30,8 +30,8 @@
 
 <!-- Begin Nav -->
   <header>
-    <div class="flex flex-6 nav center left">
-      <div class="hidden-desktop center">
+    <div class="flex flex-12 nav center left">
+      <div class="hidden-desktop left">
         <div id="open-close-nav" class="hamburger hamburger--squeeze">
           <div class="hamburger-box">
             <div class="hamburger-inner"></div>
@@ -39,15 +39,13 @@
         </div>
       </div>
 
-      <div class="flex flex-12 center">
-        <div class="center flex-3 flex-mobile-6">
-          <a href="/">
-            <span class="beta"><img class="flex center" src="logo.jpg">beta</span>
-          </a>
-        </div>
+      <div class="flex flex-2 flex-mobile-4 center">
+        <a href="/">
+          <span class="beta"><img class="flex center" src="logo.jpg">beta</span>
+        </a>
       </div>
 
-      <div class="menu flex center left">
+      <div class="menu flex flex-8 center">
         <div class="nav-item">
           <p class="main">Dropdown</p>
           <div class="dropdown">
@@ -156,45 +154,27 @@
 <!-- Form Start -->
   <section id="form">
     <h1>Form</h1>
-    <form action="#" method="POST">
+    <form id="contact-form" action="#" method="POST">
       <div class="flex">
         <div class="flex-6 flex-mobile-12" style="padding: 10px;">
           <input required type="name" name="name">
           <label>Name <span>*</span></label>
         </div>
+
         <div class="flex-6 flex-mobile-12" style="padding: 10px;">
-          
           <input required type="email" name="email">
           <label>Email <span>*</span></label>
         </div>
-        <div class="flex-6 flex-mobile-12" style="padding: 10px;">
-          
-          <input type="tel" name="telephone">
-          <label>Telephone</label>
-        </div>
-        <div class="flex-6 flex-mobile-12" style="padding: 10px;">
-          
-          <input type="url" name="website">
-          <label>Website</label>
-        </div>
-        <div class="flex-6 flex-mobile-12" style="padding: 10px;">
-          
-          <input required type="text" name="subject">
-          <label>Subject <span>*</span></label>
-        </div>
+
         <div class="flex-12" style="padding: 10px;">
-          
           <textarea required type="text" name="message"></textarea>
           <label>Message <span>*</span></label>
         </div>
-        <button type="submit" value="Submit" class="center" style="margin: 25px auto;">Submit</button>
+        <button type="submit" value="Submit" class="center form-submit">Submit</button>
       </div>
     </form>
   </section>
 <!-- Form End -->
-
-<!--   <button class="contact-button">clickkk</button>
- -->
 
   <footer>
     <div class="flex">
@@ -218,5 +198,6 @@
     <!-- Useful.ly JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
