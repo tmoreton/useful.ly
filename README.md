@@ -7,44 +7,74 @@ useful.ly is a CSS framework based on [Flexbox](https://developer.mozilla.org/en
 useful.ly is in early but active development! Try it out now:
 
 Include this line in your index.html
+
+Flexbox Grid System ONLY
 ```sh
-<link rel="stylesheet" type="text/css" href="https://s3.amazonaws.com/useful.ly/flex.css">
+  <link rel="stylesheet" type="text/css" href="https://s3.amazonaws.com/useful.ly/flex.css">
+```
+
+Full CSS Library with Flexbox Grid System
+```sh
+  <link rel="stylesheet" type="text/css" href="https://s3.amazonaws.com/useful.ly/useful.ly.min.css">
 ```
 
 ### HTML Class
 
 ```sh
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title></title>
+      <title></title>
 
-    <!-- Style Guide CSS -->
-    <link rel="stylesheet" type="text/css" href="https://s3.amazonaws.com/useful.ly/flex.css">
+      <!-- Style Guide CSS -->
+      <link rel="stylesheet" type="text/css" href="https://s3.amazonaws.com/useful.ly/useful.ly.min.css">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
-  </head>
+    </head>
 
-  <body>
+    <body>
 
-		<header></header>
+  		<header></header>
 
-		<section></section>
+  		<section></section>
 
-		<footer></footer>
+  		<footer></footer>
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-  </body>
-</html>
+    </body>
+  </html>
+```
+
+### Flex Class Classes
+
+#### Flex Grid Sizing
+```sh
+  .flex
+  .flex-{1-12}
+  .flex-tablet-{1-12}
+  .flex-mobile-{1-12}
+  .hidden-desktop
+  .hidden-tablet
+  .hidden-mobile
+```
+
+#### Flex Grid Position
+```sh
+  *All need a parent div with class flex to work correctly
+  .center (aligns vertically and horizontally & adds spacing between other flex items)
+  .top
+  .bottom
+  .left
+  .right
 ```
 
 ### Flex Class Structure
@@ -75,6 +105,78 @@ Include this line in your index.html
       <div></div>
     </div>
   </div>
+```
+
+### Navigation HTML
+
+```sh
+  <header>
+    <div class="flex flex-12 nav center left">
+      <div class="hidden-desktop left">
+        //Hamburger button also calls jQuery to expand menu
+        <div id="open-close-nav" class="hamburger hamburger--squeeze">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-2 flex-mobile-4 center">
+        <a href="/">
+          <img class="flex center" src="logo.jpg">
+        </a>
+      </div>
+
+      <div class="menu flex flex-8 center">
+        //Dropdown must have nav-item class
+        <div class="nav-item">
+          <p class="main">Dropdown</p>
+          <div class="dropdown">
+            <a href="#" class="sub"></a>
+            <a href="#" class="sub"></a>
+          </div>
+        </div>
+
+        <a href="#" class="main"></a>
+        <a href="#" class="main"></a>
+        <a href="#" class="main"></a>
+        <a href="#" class="main"></a>
+      </div>
+    </div> 
+  </header>
+```
+
+### Navigation JS
+
+```sh
+  // Showing and Hiding mobile nav Overlay
+  $('#open-close-nav').click( function(){
+    if ($("#open-close-nav").hasClass('is-active')){
+      $("#open-close-nav").removeClass('is-active');
+      $('body').css("overflow", "initial");
+      $(".menu").removeClass("open");
+    } else {
+      $("#open-close-nav").addClass('is-active');
+      $('body').css("overflow", "hidden");
+      $(".menu").addClass("open");
+    }
+  });
+
+  //Close nav when link is clicked
+  $('a').click(function(){
+    $("#open-close-nav").removeClass('is-active');
+    $(".menu").removeClass("open");
+    $('body').css("overflow", "initial");
+  })
+
+  // Nav Dropwdowns
+  $(".nav-item").click(function(){
+    if ($(this).hasClass("open")){
+      $(this).removeClass("open");
+    } else {
+      $(this).addClass("open");
+    }
+  })
 ```
 
 ### Hero
