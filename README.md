@@ -13,7 +13,7 @@ Flexbox Grid System ONLY
   <link rel="stylesheet" type="text/css" href="https://s3.amazonaws.com/useful.ly/flex.css">
 ```
 
-Full CSS Library with Flexbox Grid System
+Full CSS Framework with Flexbox Grid System
 ```sh
   <link rel="stylesheet" type="text/css" href="https://s3.amazonaws.com/useful.ly/useful.ly.min.css">
 ```
@@ -55,26 +55,29 @@ Full CSS Library with Flexbox Grid System
 ```
 
 ### Flex Class Classes
-
+  The goal was to start using flexbox with the lowest possible learning curve aka least about of classes necessary
+  
 #### Flex Grid Sizing
+* All need .flex to be present in order work correctly
 ```sh
   .flex
-  .flex-{1-12}
-  .flex-tablet-{1-12}
-  .flex-mobile-{1-12}
-  .hidden-desktop
-  .hidden-tablet
-  .hidden-mobile
+    .flex-{1-12}
+    .flex-tablet-{1-12}
+    .flex-mobile-{1-12}
+    .hidden-desktop
+    .hidden-tablet
+    .hidden-mobile
 ```
 
 #### Flex Grid Position
+* All need .flex to be present in order work correctly
 ```sh
-  *All need a parent div with class flex to work correctly
-  .center (aligns vertically and horizontally & adds spacing between other flex items)
-  .top
-  .bottom
-  .left
-  .right
+  .flex
+    .center (aligns vertically and horizontally & adds spacing between other flex items)
+    .top
+    .bottom
+    .left
+    .right
 ```
 
 ### Flex Class Structure
@@ -208,8 +211,8 @@ Full CSS Library with Flexbox Grid System
     <div class="modal-background" onclick="closeModal()"></div>
     <div class="modal-content">
       <p class="modal-close"  onclick="closeModal()">x</p>
-      <h1>Header</h1>
-      <p>Content</p>
+      <h1></h1>
+      <p></p>
     </div>
   </div>
 ```
