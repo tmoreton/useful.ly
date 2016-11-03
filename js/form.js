@@ -5,6 +5,7 @@ $('button[type="submit"]').click( function(){
 
 //Submits form to API Gateway
 $("#contact-form").submit(function(e) {
+  $(".form-submit").text("Submitting...");
 	e.preventDefault();
   var url = 'https://ycwfh8vkck.execute-api.us-east-1.amazonaws.com/prod/test'
 	var data = JSON.stringify({
@@ -26,6 +27,10 @@ $("#contact-form").submit(function(e) {
       $("input[name='email']").val("");
       $("textarea[name='message']").val("");
       $('form').removeClass('submitted');
+      $("input[name='name']").attr("disabled", "disabled");
+      $("input[name='email']").attr("disabled", "disabled");
+      $("textarea[name='message']").attr("disabled", "disabled");
+      $(".form-submit").attr("disabled", "disabled");
     },
     error: function (data) {
       console.log("Error" + data)
