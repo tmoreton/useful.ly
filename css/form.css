@@ -15,7 +15,7 @@ input, select, textarea {
 }
 
 textarea {
-	height: 200px;
+	height: 150px;
 	resize: none;
 }
 
