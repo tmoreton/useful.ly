@@ -32,6 +32,24 @@ img {
 	height:auto
 }
 
+figure {
+	margin: 0;
+		overflow: scroll;
+}
+
+pre {
+	height: 18px;
+	margin-left: -35px;
+}
+
+iframe {
+	 overflow: hidden;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 .hero {
 	background-color: var(--main);
 	color: white;
@@ -43,6 +61,12 @@ img {
 
 .caret {
 	font-size: 100px;
+}
+
+.highlight {
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  border-radius: 4px;
 }
 
  /*Small Devices, Tablets, Phones*/ 

@@ -12,14 +12,12 @@ button {
 
 button:hover {
 	border: 1px solid var(--main);
-	transition: 0.1s;
 }
 
 button:active {
 	color: #fff;
 	background-color: var(--main);
   box-shadow: inset 1px 1px 5px var(--black);
-  transition: 0.1s;
 }
 
 a {
@@ -30,7 +28,6 @@ a {
 
 a:hover {
 	color: var(--main);
-	transition: 0.3s;
 }
 
 button.small {
