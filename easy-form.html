@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Contact API</title>
+    <title>EASY Form</title>
 
     <!-- Style Guide CSS -->
     <link href="css/form.css" rel="stylesheet">
@@ -61,15 +61,39 @@
   </header>
 <!-- End Nav -->
 
-  <section>
-    <h5 style="text-align: center;"><strong>EASY Contact Form</strong></h5>
-    <p style="text-align: center;">Quick Setup - Great for static sites</p>
-    <br>
-    <p style="text-align: center;"><strong>1. Copy iframe code below</strong></p>
-    <p style="text-align: center;"><strong>2. Paste iframe into your own code</strong></p>
-    <p style="text-align: center;"><strong>3. Change <u>email=yourEmail@email.com</u> to your own</strong></p>
-    <p style="text-align: center;"><strong>4. Done</strong></p>
-  </section>
+  <div class="hero">
+    <div class="flex hero-content center">
+      <div style="text-align: center;">
+        <section>
+          <h3><strong>EASY Contact Form</strong></h3>
+          <p>Free for 500 emails/month</p>
+          <p>Quick Setup</p>
+          <p>Great for static sites</p>
+          <br>
+          <p><strong>1.</strong> Copy iframe code below</p>
+          <p><strong>2.</strong> Paste iframe into your own code</p>
+          <p><strong>3.</strong> Change <strong>email=yourEmail@email.com</strong> to your own</p>
+          <p><strong>4.</strong> Done</p>
+        </section>
+
+        <h2>OR</h2>
+
+        <section>
+          <h3><strong>EASY Form Plus+</strong></h3>
+          <p>EASY Contact Form is free and always will be for up to 500 emails/month but I am also currently working on a Plus version with more features for customization, added form fields and embeded forms.</p>
+          <button style="margin-top: 25px;" class="inverted" onclick="openModal()">Plus+</button>
+        </section>
+      </div>
+    </div>
+
+    <div class="flex bottom center">
+      <div style="text-align: center;">
+        <h6>Test It Out With Your Own Email!</h6>
+        <h2>ˇ</h2>
+      </div>
+    </div>
+  </div>  
+
 
   <section>
     <h6>Test Out Form Below:</h6>
@@ -123,11 +147,41 @@
     </div>
   </footer>
 
+<!-- Modal Begin -->
+  <section id="modal-section">
+    <div id="modal" class="modal flex center">
+      <div class="modal-background" onclick="closeModal()"></div>
+      <div class="modal-content">
+        <p class="modal-close"  onclick="closeModal()">x</p>
+        <h4>EASY Form Plus+</h4>
+        <br>
+        <p>I am still working on the features so if you would like to get updated when it is available or request features of your own please leave me your email and feature request below.</p>
+
+        <form id="easy-form-request" action="#" method="POST">
+          <div class="flex">
+
+            <div class="flex-12" style="padding: 10px;">
+              <input required type="email" name="email" value="">
+              <label>Email <span>*</span></label>
+            </div>
+
+            <div class="flex-12" style="padding: 10px;">
+              <input type="text" name="feature" value=""></input>
+              <label>Feature</label>
+            </div>
+            <button type="submit" value="Submit" class="center form-submit">Submit</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+<!-- Modal End --> 
+
     <!-- Style Guide JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/analytics.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/contact.js"></script>
     <script type="text/javascript">
       $( "#form-email" ).keyup(function() {
         var formEmail = $(this).val();
@@ -135,6 +189,33 @@
         $("#example-email").text(formEmail);
         $("iframe").attr("src", url);
       });
+
+      $("#easy-form-request").submit(function(e) {
+        e.preventDefault();
+        var email = $("input[name='email']");
+        var feature = $("textarea[name='feature']");
+
+        var url = 'https://ycwfh8vkck.execute-api.us-east-1.amazonaws.com/prod/test'
+        var data = {
+          "email": email.val(),
+          "feature": feature.val()
+        }
+        
+        $.ajax({
+          type: 'POST',
+          url: url,
+          dataType: 'json',
+          contentType: 'application/json',
+          data: JSON.stringify(data),
+          success: function (data) {
+            location.reload();
+          },
+          error: function (data) {
+            console.log("Error" + data)
+          }
+        })
+      });
+
     </script>
   </body>
 </html>

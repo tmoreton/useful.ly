@@ -10,6 +10,18 @@ button {
   font-weight: 100;
 }
 
+button.inverted {
+	background-color: var(--main);
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+button.inverted:hover {
+	background-color: var(--white);
+  border: 1px solid var(--white);
+  color: var(--main);
+}
+
 button:hover {
 	border: 1px solid var(--main);
 }
