@@ -1,0 +1,40 @@
+/*Not needed for actual style guide*/
+h1 {
+	font-weight: 400;
+}
+
+.logo {
+	font-weight: 100;
+	font-size: 52px;
+	border-bottom: 2px solid var(--white);
+}
+
+.tile {
+	min-height: 80px;
+	border-radius: 5px;
+	background-color: var(--main);
+	color: var(--white);
+	text-align: center;
+	padding: 1.75em;
+	margin:0.5em;
+}
+
+.column-tile {
+	border-radius: 5px;
+	background-color: var(--black);
+	color: var(--white);
+	text-align: center;
+	padding: 1.75em;
+	margin:0.5em;
+}
+
+ /*Small Devices, Tablets, Phones*/ 
+@media only screen and (max-width :768px) {
+	.column-tile {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width :480px) {
+
+}
